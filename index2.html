@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Hello this is array manupalation 2</h1>
+
+    <script>
+    
+    
+    const items = [
+    { name: "splendour", price: 200 },
+    { name: "hero", price: 200 },
+    { name: "yamaha", price: 10 },
+    { name: "boxer", price: 10 },
+    { name: "bullet", price: 500 },
+    { name: "R15", price: 1000 },
+    { name: "NINJA", price: 1000 }
+
+];
+
+// const abc=items.reduce((acc,curv,index,array)=>{
+//  if(acc.curv[price]<100){
+//      return acc=acc.curv[name] 
+//  }   
+// })
+//     console.log(abc)
+
+var bcd=items.filter((e)=>{
+    return e.price>200
+}).map((e)=>{
+    return e.name
+})
+console.log(bcd)
+
+const item =[1,2,3,4,5,6]
+
+function my(item){
+  let max =0;
+    for (let i=0 ;i<item.length;i++){
+    if(item[i]>max){
+        max=item[i]
+    }
+}
+return max
+}
+console.log(my(item))
+
+
+var mum=item.reduce((acc,curv,index,array)=>{
+if(curv>acc){
+    acc=curv
+}
+return acc
+})
+ console.log(mum)
+
+ var tat=item.reduce((acc,curv)=>{
+    debbuger;  
+    acc=acc+curv
+      return acc=acc/item.length
+
+ })
+ console.log(tat)
+
+
+    
+    </script>
+</body>
+</html>
